@@ -26,8 +26,8 @@ URL: https://www.kaggle.com/competitions/spaceship-titanic/overview
 $$Accuracy=\text{Accuracy} = \frac{\text{correct classifications}}{\text{total classifications}} = \frac{TP + TN}{TP + TN + FP + FN}
 $$
 ## 提出ログ
-|日付|精度|モデル|パラメータ|工夫した点|
+|日付|精度|モデル|メモ（工夫した点）|
 |:---|:---|:---|:---|:---|
-|2024/09/15||||なし（ベースライン）|
-
+|2024/09/15|0.7993099482461185|LightGBM|なし（ベースライン）|
+|2024/09/15|0.8056354226566993|LightGBM|ベースライン + Optuna|
 ## アイデア
