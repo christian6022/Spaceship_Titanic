@@ -15,7 +15,7 @@ URL: https://www.kaggle.com/competitions/spaceship-titanic/overview
 |PassengerId|- 各乗客の一意のID<br>- gggg_ppの形式で表記される<br>　-gggg：乗客が一緒に旅行しているグループ（家族であることが多いが、必ずしもそうとは限らない）<br>　-pp：グループ内の番号||
 |HomePlanet|乗客が出発した惑星、通常は永住地の惑星||
 |CryoSleep|- 乗客が航海中に可視状態になることを選択したかどうか<br>- 冷凍睡眠中の乗客は客室に閉じ込められている||
-|Cabin|- 乗客が滞在しているキャビン番号<br>- deck/num/sideの形式を取る<br>　- sideはPortを表す'P'、または、Starboardを表す'S'のいずれか||
+|Cabin|- 乗客が滞在しているキャビン番号<br>- deck/num/sideの形式を取る<br>　- sideはPort（船頭から見て右）を表す'P'、または、Starboard（船頭から見て左）を表す'S'のいずれか||
 |Destination|降りる惑星||
 |Age|乗客の年齢||
 |VIP|乗客が公開中に特別VIPサービスの料金を支払ったかどうか||
@@ -41,8 +41,10 @@ $$
     - sideは2値
     - deckとnumは？
 - HomePlanet、CryoSleep、Destination、VIPの真理値のAND/ORの値とTransportedとの関係性
+- Last Nameを用いて、Groupが家族かどうか判定
 
 ## TODO
 - Discussionを基に
     - 特徴量エンジニアリング
+        - 欠損値の処理
     - モデルの修正・変更
